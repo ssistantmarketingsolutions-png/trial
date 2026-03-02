@@ -6,12 +6,24 @@ This file provides guidance for AI assistants (Claude and others) working in thi
 
 ## Repository Overview
 
-**Status:** Newly initialized repository — no source code has been added yet.
+**Status:** Pre-bootstrap — no application source code exists yet. The only file is this `CLAUDE.md`.
 
-When this project is bootstrapped, update this file with:
+### Current State (as of 2026-03-02)
+
+| Item | Detail |
+|---|---|
+| Files | `CLAUDE.md` only |
+| Commits | 1 (`4ef111f` — initial CLAUDE.md) |
+| Branches | `master` (default), `claude/claude-md-mm8u9094i27mqwjq-Cja0V` (active AI branch) |
+| Remote | `ssistantmarketingsolutions-png/trial` |
+
+### When the project is bootstrapped, update this file with:
+
 - Project purpose and description
 - Technology stack and key dependencies
-- Architecture overview and module layout
+- Architecture overview and directory layout
+- Actual test/build/lint commands (replace placeholders below)
+- Populated naming conventions and code style rules
 
 ---
 
@@ -22,6 +34,7 @@ When this project is bootstrapped, update this file with:
 - All AI-assisted work is done on dedicated `claude/<task-slug>` branches
 - Branch names must start with `claude/` followed by a unique task identifier
 - Never push directly to `main` or `master` without explicit permission
+- The current active AI branch is `claude/claude-md-mm8u9094i27mqwjq-Cja0V`
 
 ### Git Commit Conventions
 
@@ -34,14 +47,18 @@ Follow [Conventional Commits](https://www.conventionalcommits.org/):
 ```
 
 Common types:
-- `feat` — new feature
-- `fix` — bug fix
-- `refactor` — code restructure with no behavior change
-- `docs` — documentation only
-- `test` — adding or updating tests
-- `chore` — tooling, config, dependencies
+
+| Type | Use for |
+|---|---|
+| `feat` | New feature |
+| `fix` | Bug fix |
+| `refactor` | Code restructure with no behavior change |
+| `docs` | Documentation only |
+| `test` | Adding or updating tests |
+| `chore` | Tooling, config, dependencies |
 
 Example:
+
 ```
 feat(auth): add JWT token refresh logic
 
@@ -56,22 +73,23 @@ git push -u origin <branch-name>
 ```
 
 If a push fails due to network errors, retry with exponential backoff:
-- Wait 2s, retry
-- Wait 4s, retry
-- Wait 8s, retry
-- Wait 16s, retry (final attempt)
+
+1. Wait 2s, retry
+2. Wait 4s, retry
+3. Wait 8s, retry
+4. Wait 16s, retry (final attempt)
 
 ---
 
 ## Code Conventions
 
-> These sections should be filled in once the project stack is established.
+> Fill these in once the project stack is established.
 
 ### Language & Style
 
-- [ ] Define language(s) used (TypeScript, Python, Go, etc.)
-- [ ] Define formatter and linter (Prettier, ESLint, Black, golangci-lint, etc.)
-- [ ] Document any auto-formatting rules (tabs vs spaces, line length, etc.)
+- [ ] Language(s) used (TypeScript, Python, Go, etc.)
+- [ ] Formatter and linter (Prettier, ESLint, Black, golangci-lint, etc.)
+- [ ] Auto-formatting rules (tabs vs spaces, line length, etc.)
 
 ### Naming Conventions
 
@@ -94,14 +112,14 @@ If a push fails due to network errors, retry with exponential backoff:
 ### Running Tests
 
 ```bash
-# Example — update with actual commands
+# Example — replace with actual commands after bootstrapping
 npm test          # unit tests
 npm run test:e2e  # end-to-end tests
 ```
 
 ### Test Conventions
 
-- [ ] Where tests live relative to source files (e.g., `__tests__/`, `*.test.ts` co-located)
+- [ ] Test file location (e.g., `__tests__/`, `*.test.ts` co-located with source)
 - [ ] Test naming patterns
 - [ ] Mocking and fixture conventions
 - [ ] Coverage requirements
@@ -113,7 +131,7 @@ npm run test:e2e  # end-to-end tests
 > Fill in once build tooling is established.
 
 ```bash
-# Example — update with actual commands
+# Example — replace with actual commands after bootstrapping
 npm install       # install dependencies
 npm run dev       # start dev server
 npm run build     # production build
@@ -128,7 +146,7 @@ npm run format    # auto-format
 - Never commit secrets, API keys, or credentials to the repository
 - Use `.env` files locally; add `.env` to `.gitignore`
 - Document all required environment variables in `.env.example`
-- Use secret management (e.g., GitHub Secrets, Vault) for CI/CD
+- Use secret management (e.g., GitHub Secrets, Vault) for CI/CD pipelines
 
 ---
 
@@ -139,8 +157,9 @@ npm run format    # auto-format
 - Read existing code before modifying it — understand context before making changes
 - Keep changes minimal and focused on the task at hand
 - Prefer editing existing files over creating new ones
-- Write clear commit messages following the conventions above
-- Run linters and tests before committing when tooling exists
+- Write clear commit messages following the Conventional Commits format above
+- Run linters and tests before committing when tooling is available
+- Confirm you are on the correct `claude/` branch before pushing
 
 ### What to Avoid
 
@@ -149,14 +168,14 @@ npm run format    # auto-format
 - Do not add comments or docstrings to code you didn't touch
 - Do not introduce security vulnerabilities (SQL injection, XSS, secrets in code, etc.)
 - Do not force-push or rebase shared branches without explicit permission
-- Do not skip pre-commit hooks (`--no-verify`) unless the user explicitly requests it
+- Do not skip pre-commit hooks (`--no-verify`) unless explicitly requested by the user
 
 ### Before Pushing
 
-1. Confirm you are on the correct `claude/` branch
-2. Verify no sensitive data is staged
-3. Ensure tests pass (if test infrastructure exists)
-4. Review the diff to confirm changes match the task scope
+1. Confirm you are on the correct `claude/` branch (not `master` or `main`)
+2. Verify no sensitive data (secrets, credentials, `.env` contents) is staged
+3. Ensure tests pass — if no test infrastructure exists, note this explicitly
+4. Review the diff to confirm changes match the task scope and nothing extraneous is included
 
 ---
 
@@ -165,5 +184,7 @@ npm run format    # auto-format
 | Field | Value |
 |---|---|
 | Remote | `ssistantmarketingsolutions-png/trial` |
-| Default AI branch prefix | `claude/` |
+| Default branch | `master` |
+| AI branch prefix | `claude/` |
+| Initialized | 2026-03-02 |
 | CLAUDE.md last updated | 2026-03-02 |
