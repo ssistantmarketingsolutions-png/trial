@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahara Coffee Co. | Yemeni Coffee — Milford, CT</title>
+  <meta name="description" content="Sahara Coffee Co. brings authentic Yemeni coffee culture to Milford, CT. Opening May 1st, 2026. Experience qishr, bun, and traditional Yemeni hospitality." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ─────────────────────────────────────────────── -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-icon">☕</span>
+        <span class="nav__logo-text">Sahara Coffee Co.</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#about">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#visit">Visit Us</a>
+      </nav>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#about" class="mobile-link">Our Story</a>
+      <a href="#menu" class="mobile-link">Menu</a>
+      <a href="#visit" class="mobile-link">Visit Us</a>
+    </div>
+  </header>
+
+  <!-- ─── HERO ─────────────────────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero__bg-pattern"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Coming to Milford, CT</p>
+      <h1 class="hero__title">
+        <span class="hero__title-line">Sahara</span>
+        <span class="hero__title-line hero__title-line--accent">Coffee Co.</span>
+      </h1>
+      <p class="hero__tagline">Authentic Yemeni coffee, steeped in centuries of tradition.</p>
+
+      <div class="countdown" id="countdown">
+        <p class="countdown__label">Opening in</p>
+        <div class="countdown__units">
+          <div class="countdown__unit">
+            <span class="countdown__number" id="cd-days">--</span>
+            <span class="countdown__name">Days</span>
+          </div>
+          <div class="countdown__sep">:</div>
+          <div class="countdown__unit">
+            <span class="countdown__number" id="cd-hours">--</span>
+            <span class="countdown__name">Hours</span>
+          </div>
+          <div class="countdown__sep">:</div>
+          <div class="countdown__unit">
+            <span class="countdown__number" id="cd-mins">--</span>
+            <span class="countdown__name">Minutes</span>
+          </div>
+          <div class="countdown__sep">:</div>
+          <div class="countdown__unit">
+            <span class="countdown__number" id="cd-secs">--</span>
+            <span class="countdown__name">Seconds</span>
+          </div>
+        </div>
+        <p class="countdown__date">May 1st, 2026</p>
+      </div>
+
+      <div class="hero__ctas">
+        <a href="#menu" class="btn btn--primary">Explore Our Menu</a>
+        <a href="#visit" class="btn btn--ghost">Find Us</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── DIVIDER ───────────────────────────────────────────── -->
+  <div class="ornament-divider">
+    <div class="ornament-divider__line"></div>
+    <div class="ornament-divider__icon">✦</div>
+    <div class="ornament-divider__line"></div>
+  </div>
+
+  <!-- ─── ABOUT ─────────────────────────────────────────────── -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__visual">
+          <div class="about__art">
+            <div class="about__art-circle about__art-circle--outer"></div>
+            <div class="about__art-circle about__art-circle--inner"></div>
+            <div class="about__art-icon">☕</div>
+            <div class="about__art-pattern"></div>
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="section-eyebrow">Our Story</p>
+          <h2 class="section-title">Where Coffee Was Born</h2>
+          <p class="about__body">
+            Yemen is the birthplace of coffee as the world knows it. For centuries, the ancient port city of Mocha gave the world its first taste of this extraordinary beverage — traded along spice routes, brewed in the courtyards of old stone cities, and shared as an act of welcome.
+          </p>
+          <p class="about__body">
+            At Sahara Coffee Co., we carry that legacy to Milford, Connecticut. Every cup we serve is an invitation — to slow down, to connect, and to taste history. From our earthy, spiced <em>qishr</em> to our hand-brewed single-origin <em>bun</em>, our coffee is made with intention and served with warmth.
+          </p>
+          <div class="about__values">
+            <div class="about__value">
+              <span class="about__value-icon">🌿</span>
+              <div>
+                <strong>Origin</strong>
+                <p>Sourced from Yemeni highlands and small farms across the Arabian Peninsula.</p>
+              </div>
+            </div>
+            <div class="about__value">
+              <span class="about__value-icon">🫖</span>
+              <div>
+                <strong>Tradition</strong>
+                <p>Brewed using methods passed down through generations, not trends.</p>
+              </div>
+            </div>
+            <div class="about__value">
+              <span class="about__value-icon">🤝</span>
+              <div>
+                <strong>Community</strong>
+                <p>A gathering place for Milford — everyone is a guest here.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DIVIDER ───────────────────────────────────────────── -->
+  <div class="ornament-divider">
+    <div class="ornament-divider__line"></div>
+    <div class="ornament-divider__icon">✦</div>
+    <div class="ornament-divider__line"></div>
+  </div>
+
+  <!-- ─── MENU ──────────────────────────────────────────────── -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <p class="section-eyebrow section-eyebrow--center">What We Serve</p>
+      <h2 class="section-title section-title--center">The Menu</h2>
+      <p class="menu__intro">A curated selection of traditional Yemeni drinks and bites, alongside familiar favorites made with the same care.</p>
+
+      <div class="menu__tabs" id="menuTabs">
+        <button class="menu__tab menu__tab--active" data-tab="drinks">Coffee & Drinks</button>
+        <button class="menu__tab" data-tab="food">Food & Sweets</button>
+      </div>
+
+      <div class="menu__panel" id="tab-drinks">
+        <div class="menu__grid">
+
+          <div class="menu-card menu-card--featured">
+            <div class="menu-card__badge">Signature</div>
+            <div class="menu-card__icon">☕</div>
+            <h3 class="menu-card__name">Qishr</h3>
+            <p class="menu-card__desc">The heartbeat of Yemeni coffee culture. Coffee husks brewed with ginger, cardamom, and a whisper of cinnamon. Light, fragrant, unforgettable.</p>
+            <span class="menu-card__price">$4.50</span>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__icon">🫖</div>
+            <h3 class="menu-card__name">Yemeni Bun</h3>
+            <p class="menu-card__desc">Whole-bean single-origin Yemeni coffee, brewed strong and served black in a small handle-less cup — the way it was meant to be enjoyed.</p>
+            <span class="menu-card__price">$5.00</span>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__icon">🌙</div>
+            <h3 class="menu-card__name">Sahara Latte</h3>
+            <p class="menu-card__desc">Our house espresso pulled from Yemeni beans, steamed with your choice of milk, touched with cardamom and rose water.</p>
+            <span class="menu-card__price">$6.00</span>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__icon">❄️</div>
+            <h3 class="menu-card__name">Iced Cardamom Cold Brew</h3>
+            <p class="menu-card__desc">Slow-steeped cold brew with a cardamom simple syrup, served over ice with a splash of oat milk. Perfect for warm days.</p>
+            <span class="menu-card__price">$6.50</span>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__icon">🌹</div>
+            <h3 class="menu-card__name">Rose Chai</h3>
+            <p class="menu-card__desc">A spiced black tea blend with dried rose petals, steamed milk, and a pinch of saffron. Warming and floral.</p>
+            <span class="menu-card__price">$5.00</span>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__icon">🍵</div>
+            <h3 class="menu-card__name">Mint Lemonade</h3>
+            <p class="menu-card__desc">Fresh-squeezed lemon, crushed mint, and a light hand with sugar. A Yemeni staple that beats the heat every time.</p>
+            <span class="menu-card__price">$4.50</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="menu__panel menu__panel--hidden" id="tab-food">
+        <div class="menu__grid">
+
+          <div class="menu-card menu-card--featured">
+            <div class="menu-card__badge">Signature</div>
+            <div class="menu-card__icon">🍯</div>
+            <h3 class="menu-card__name">Bint Al-Sahn</h3>
+            <p class="menu-card__desc">Traditional Yemeni honey cake — layers of thin, buttery dough drizzled with wild Sidr honey. Rich, sweet, and deeply comforting.</p>
+            <span class="menu-card__price">$5.50</span>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__icon">🫓</div>
+            <h3 class="menu-card__name">Lahoh</h3>
+            <p class="menu-card__desc">Soft, spongy sourdough flatbread — fermented overnight and cooked on a cast iron griddle. Served with honey and date butter.</p>
+            <span class="menu-card__price">$4.00</span>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__icon">🌰</div>
+            <h3 class="menu-card__name">Spiced Date Balls</h3>
+            <p class="menu-card__desc">Medjool dates blended with toasted sesame, cardamom, and pistachios. Three per order — small but mighty.</p>
+            <span class="menu-card__price">$3.50</span>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__icon">🥐</div>
+            <h3 class="menu-card__name">Samsosa Halewah</h3>
+            <p class="menu-card__desc">Crispy pastry pockets filled with a sweet walnut and raisin filling, dusted with powdered sugar. A perfect coffee companion.</p>
+            <span class="menu-card__price">$4.00</span>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__icon">🥚</div>
+            <h3 class="menu-card__name">Morning Egg Plate</h3>
+            <p class="menu-card__desc">Eggs scrambled with cumin, black pepper, and tomato, served with flatbread and a side of honey. Simple and satisfying.</p>
+            <span class="menu-card__price">$7.00</span>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card__icon">🍬</div>
+            <h3 class="menu-card__name">Seasonal Sweets</h3>
+            <p class="menu-card__desc">Ask your barista what's fresh today. We rotate traditional sweets and treats based on the season and our mood.</p>
+            <span class="menu-card__price">Varies</span>
+          </div>
+
+        </div>
+      </div>
+
+      <p class="menu__note">Full menu available opening day. Items and pricing subject to change.</p>
+    </div>
+  </section>
+
+  <!-- ─── DIVIDER ───────────────────────────────────────────── -->
+  <div class="ornament-divider">
+    <div class="ornament-divider__line"></div>
+    <div class="ornament-divider__icon">✦</div>
+    <div class="ornament-divider__line"></div>
+  </div>
+
+  <!-- ─── VISIT ─────────────────────────────────────────────── -->
+  <section class="visit" id="visit">
+    <div class="container">
+      <p class="section-eyebrow section-eyebrow--center">Find Us</p>
+      <h2 class="section-title section-title--center">Visit Sahara</h2>
+
+      <div class="visit__grid">
+        <div class="visit__card">
+          <div class="visit__card-icon">📍</div>
+          <h3>Location</h3>
+          <p>Milford, Connecticut</p>
+          <p class="visit__subtext">Exact address announced closer to opening day.<br>Follow us for updates.</p>
+        </div>
+
+        <div class="visit__card visit__card--featured">
+          <div class="visit__card-icon">🗓</div>
+          <h3>Grand Opening</h3>
+          <p class="visit__opening-date">May 1st, 2026</p>
+          <p class="visit__subtext">Mark your calendar — opening day will include complimentary tastings and a celebration you won't want to miss.</p>
+        </div>
+
+        <div class="visit__card">
+          <div class="visit__card-icon">🕐</div>
+          <h3>Hours</h3>
+          <div class="visit__hours">
+            <div class="visit__hours-row">
+              <span>Mon – Fri</span>
+              <span>7:00 AM – 7:00 PM</span>
+            </div>
+            <div class="visit__hours-row">
+              <span>Saturday</span>
+              <span>8:00 AM – 8:00 PM</span>
+            </div>
+            <div class="visit__hours-row">
+              <span>Sunday</span>
+              <span>9:00 AM – 6:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social / Contact -->
+      <div class="visit__connect">
+        <h3 class="visit__connect-title">Stay in the Loop</h3>
+        <p>Follow us on social media for opening updates, behind-the-scenes, and more.</p>
+        <div class="visit__social">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+            Instagram
+          </a>
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            Facebook
+          </a>
+          <a href="mailto:hello@saharacoffeeco.com" class="social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+            Email Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">☕ Sahara Coffee Co.</span>
+        <p class="footer__tagline">Yemeni coffee, Milford soul.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#about">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#visit">Visit Us</a>
+      </div>
+      <p class="footer__copy">© 2026 Sahara Coffee Co. All rights reserved.<br>Opening May 1st in Milford, CT.</p>
+    </div>
+    <div class="footer__pattern"></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
